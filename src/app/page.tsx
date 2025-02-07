@@ -1,14 +1,19 @@
-"use client"
-import Image from "next/image";
-import Headingbar from "./components/Headingbar";
-import Promotion from "./components/promotion";
 
- 
+import BrowseRange from "./components/Browsing";
+import Explore from "./components/Explore";
+import OurProducts from "./components/Products";
+import Promotion from "./components/Promotion";
+import PromotionalPage from "./components/Promotion2";
+
+
 export default function Home() {
   return (
     <div>
-    <Headingbar/>
     <Promotion/>
+    <BrowseRange/>
+    <OurProducts/>
+    <Explore/>
+    <PromotionalPage/>
     </div>
   );
 }

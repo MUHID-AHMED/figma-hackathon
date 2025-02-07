@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 const poppins= Poppins ({
   subsets:['latin'], 
   weight:['100','200','300','400','500','600','700','800','900'],
@@ -31,9 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} bg-background text-black antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
